@@ -1,0 +1,186 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #CACFD2;
+}
+
+.accordion {
+
+	min-width: 70%;
+	padding: 2% 10%;
+	margin: 0 auto;
+}
+
+.wrapper {
+	padding: 4% 4%;
+	background-color: azure;
+
+}
+
+h1 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.firstImg {
+	height: 25rem;
+	width: 25rem;
+}
+
+.firstMemImg,
+.secondMemImg,
+.thirdMemImg,
+.fourMemImg,
+.fiveMemImg {
+	text-align: center;
+	max-height: 0;
+	transition: 1s;
+	overflow: hidden;
+}
+
+.firstInput,
+.secondInput,
+.thirdInput,
+.fourInput,
+.fiveInput {
+	appearance: none;
+	-webkit-appearance: none;
+
+	position: absolute;
+}
+
+.firstInput:checked~.firstMemImg {
+	max-height: 100vh;
+}
+
+label {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 900;
+	font-size: 2rem;
+	display: block;
+	padding: 2% 2%;
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.arrow {
+	height: 1rem;
+	width: 1rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(svg/button.svg);
+	rotate: -90deg;
+	transition: all 0.5s ease-in-out;
+	position: absolute;
+	right: 5%;
+}
+
+
+.secondInput:checked~.secondMemImg {
+	max-height: 100vh;
+}
+
+.secondInput:checked~.accordion-title>.arrow {
+	rotate: 0deg;
+}
+
+.firstInput:checked~.accordion-title>.arrow {
+	rotate: 0deg;
+}
+
+.thirdInput:checked~.accordion-title>.arrow {
+	rotate: 0deg;
+}
+
+.fourInput:checked~.accordion-title>.arrow {
+	rotate: 0deg;
+}
+
+.fiveInput:checked~.accordion-title>.arrow {
+	rotate: 0deg;
+}
+
+
+.thirdInput:checked~.thirdMemImg {
+	max-height: 100vh;
+}
+
+.fourInput:checked~.fourMemImg {
+	max-height: 100vh;
+}
+
+.fiveInput:checked~.fiveMemImg {
+	max-height: 100vh;
+}
+
+
+.fourMem:hover>.fourMemImg {
+	max-height: 100vh;
+}
+
+.firstMem:hover>.firstMemImg {
+	max-height: 100vh;
+}
+
+.SecondMem:hover>.secondMemImg {
+	max-height: 100vh;
+}
+
+.fiveMem:hover>.fiveMemImg {
+	max-height: 100vh;
+}
+
+.thirdMem:hover>.thirdMemImg {
+	max-height: 100vh;
+
+}
+
+
+@media (min-width: 320px) and (max-width: 819px) {
+	.firstImg {
+		width: 7rem;
+		height: 7rem;
+	}
+
+	label {
+		font-size: small;
+	}
+
+	.wrapper {
+		background-color: beige;
+	}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+	.wrapper {
+		background-color: aquamarine;
+	}
+
+	label {
+		font-size: 2rem;
+	}
+
+	.firstImg {
+		width: 20rem;
+		height: 20rem;
+	}
+}
+
+@media (min-width: 820px) and (max-width:1199px) {
+	.wrapper {
+		background-color: blueviolet;
+	}
+
+	label {
+		font-size: 2rem;
+	}
+
+	.firstImg {
+		width: 13rem;
+		height: 13rem;
+	}
+}
